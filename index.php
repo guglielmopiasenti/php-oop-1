@@ -23,11 +23,11 @@ $movies = [$movie1, $movie2];
         <div class="card">
             <?php foreach($movies as $movie) :?>
                 <li>
-                    <h2><?=$movie->$title?></h2>
-                    <small><em><?=$movie->$genre?></em></small>
-                    <small><em><?=$movie->$release_date?></em></small>
+                    <h2><?=$movie->title?></h2>
+                    <small><em><?=$movie->genre?></em></small>
+                    <small><em><?=$movie->release_date?></em></small>
                 </li>
-            <? endforeach;?>
+            <?php endforeach;?>
         </div>
     </section>
 </body>
