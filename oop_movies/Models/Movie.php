@@ -1,4 +1,5 @@
 <?php
+include __DIR__ . '/Person.php'; 
 class Movie
 {
     // instance
@@ -13,5 +14,11 @@ class Movie
         $this->title = $title;
         $this->genre = $genre;
         $this->release_date = $release_date;
+    }
+    public function addActor(Actor $actor)
+    {
+        if($actor instanceof Actor){
+            $cast[] = $actor;
+        }
     }
 }
