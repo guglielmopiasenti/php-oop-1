@@ -2,9 +2,14 @@
 include __DIR__ . '/oop_movies/Models/Person.php';
 include __DIR__ . '/oop_movies/Models/Movie.php';
 
+$actor1 = new Actor(1, 'Jhon', 'Doe');
+$actor2 = new Actor(2, 'Saruman', 'Evil');
 
 $movie1 = new Movie(1, 'Il Signore degli Anelli', 'Fantasy', '2001' );
 $movie2 = new Movie(2, 'The Truman Show', 'Comedy', '1998');
+
+$movie1->addActor($actor2);
+$movie2->addActor($actor2);
 
 $movies = [$movie1, $movie2];
 ?>
